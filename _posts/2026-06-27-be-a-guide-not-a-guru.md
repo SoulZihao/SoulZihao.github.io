@@ -1,5 +1,7 @@
 ---
 title: "My First Blog: Be a Guide, Not a Guru"
+description: "Reflections on starting my first blog, overcoming imposter syndrome, and adopting the mindset of being a guide rather than a guru on the journey."
+author: SoulZihao
 date: 2026-06-27 16:00:00 +0800
 categories: [Blogging, Personal]
 tags: [writing, learning, career]

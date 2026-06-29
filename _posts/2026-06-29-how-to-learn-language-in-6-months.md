@@ -1,5 +1,7 @@
 ---
 title: "Meta-Learning: Learning How to Learn is the Ultimate '心法'"
+description: "An exploration of meta-learning and the core principles and tactics needed to learn any language in 6 months, inspired by Chris Lonsdale's methodology."
+author: SoulZihao
 date: 2026-06-29 20:50:00 +0800
 categories: [Blogging, English]
 tags: [learning, english]
