@@ -1,0 +1,26 @@
+🛠️ 实战演练：用符号链接将 WSL 磁盘转移到 D 盘
+你的 WSL 虚拟磁盘文件存放在 C:\Users\zihao\AppData\Local\wsl 下的 ext4.vhdx。我们要做的，就是把它真身挪到 D 盘，然后在 C 盘原位留下一个“传送门”。
+
+第一步：彻底关闭 WSL
+必须先释放文件句柄，否则文件会被锁死无法移动。打开 Windows 的 PowerShell（普通权限即可），执行：
+
+PowerShell
+wsl --shutdown
+第二步：在 D 盘创建新家并转移文件
+在 D 盘创建一个专门的目录，比如 D:\WSL_Storage。
+
+剪切（注意是移动，不是复制）C 盘中你的 WSL 文件夹：
+
+原路径：C:\Users\zihao\AppData\Local\wsl
+
+把这个 wsl 文件夹整体剪切到 D:\WSL_Storage 下。
+
+此时，D 盘路径应该为 D:\WSL_Storage\wsl，而 C 盘的 AppData\Local\ 下已经没有 wsl 这个文件夹了。
+
+第三步：用管理员权限建立“符号链接”
+鼠标右键点击 Windows 开始按钮，选择 终端（管理员） 或 PowerShell（管理员）。
+
+运行 Windows 自带的 mklink 工具（注意：PowerShell 中调用 cmd /c 来执行 mklink，因为这是 CMD 的内置命令）：
+
+PowerShell
+cmd /c mklink /d "C:\Users\zihao\AppData\Local\wsl" "D:\WSL_Storage\wsl"
