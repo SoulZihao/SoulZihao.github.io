@@ -11,7 +11,7 @@ Learning how to learn—I call it **meta-learning**.
 
 Chinese students work incredibly hard, but high-impact achievements are rare. One of the main reasons, IMO, is that **they don’t know what they don’t know**. They know *that* they should work hard, but they don’t know *how* they should work hard.
 
-These meta-level methodologies are what we refer to as mental principles, or **“心法”** in Chinese (which I think is a much more appropriate term).
+These meta-level methodologies are what we refer to as mental principles, or **“心法”** in Chinese (which I think is more appropriate).
 
 > 当你掌握了“心法”，你的效率会呈线性提升（$n$ times）；而当你掌握了“心法的心法”，你的效率将会发生指数级跃升（$n^2$ times）。
 
